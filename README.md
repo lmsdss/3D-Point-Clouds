@@ -22,3 +22,16 @@ a.Means
 b.GMM  
 c.Spectral Clustering  
 3.Visualize and compare the results with the standard results
+### HW4
+Use KITTI 3D object detection dataset, select 3 point clouds, do the followings.  
+1.Remove the ground from the lidar points. Visualize ground as blue.  
+2.Clustering over the remaining points. Visualize the clusters with random colors.
+### HW5
+Classification over ModelNet40  
+1.Build your own network with pytorch  
+• PointNet example: https://github.com/fxia22/pointnet.pytorch  
+2.ModelNet40 Dataset given by PointNet++:  
+• https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip  
+3.Follow the training/testing split
+4.Remember to add random rotation over z-axis
+5.Report testing accuracy

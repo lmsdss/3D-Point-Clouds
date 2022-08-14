@@ -35,3 +35,14 @@ Classification over ModelNet40
 3.Follow the training/testing split
 4.Remember to add random rotation over z-axis
 5.Report testing accuracy
+### HW6  
+1.Setup the KITTI object detection evaluation environment  
+• git clone https://github.com/prclibo/kitti_eval.git  
+• g++ -O3 -DNDEBUG -o evaluate_object_3d_offline evaluate_object_3d_offline.cpp  
+• sudo apt-get install gnuplot     
+• sudo apt-get install texlive-extra-utils  
+2.Download and read the KITTI Object Detection dataset ”devkit” readme.   
+3.Divide the KITTI Object Detection into training set and validation set.
+4.Generate object detection results on KITTI validation set  
+Option 1: find any open-source 3d object detector, run it.  
+Option 2: copy the ground truth as the result, but you need to process it into the correct format.  

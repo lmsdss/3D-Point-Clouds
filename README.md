@@ -16,7 +16,7 @@ a.Numpy brute-force search
 b.scipy.spatial.KDTree  
 c.Your own kd-tree/octree in python or C++
 ### HW3
-1.Generate clustering dataset using sklearn.
+1.Generate clustering dataset using sklearn.  
 2.Implement your own version of.  
 a.Means  
 b.GMM  

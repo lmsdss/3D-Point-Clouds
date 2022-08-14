@@ -12,16 +12,16 @@ random). Visualize the results.
 ### HW2
 1.We provide one 𝑁 × 3 point cloud,8-NN search for each point to the point cloud.  
 2.Implement 3 NN algorithms.  
-a.Numpy brute-force search  
-b.scipy.spatial.KDTree  
-c.Your own kd-tree/octree in python or C++
+• Numpy brute-force search  
+• scipy.spatial.KDTree  
+• Your own kd-tree/octree in python or C++
 ### HW3
 1.Generate clustering dataset using sklearn.  
 2.Implement your own version of.  
-a.Means  
-b.GMM  
-c.Spectral Clustering  
-3.Visualize and compare the results with the standard results
+• Means  
+• GMM  
+• Spectral Clustering  
+• Visualize and compare the results with the standard results
 ### HW4
 Use KITTI 3D object detection dataset, select 3 point clouds, do the followings.  
 1.Remove the ground from the lidar points. Visualize ground as blue.  
@@ -46,3 +46,29 @@ Classification over ModelNet40
 4.Generate object detection results on KITTI validation set  
 Option 1: find any open-source 3d object detector, run it.  
 Option 2: copy the ground truth as the result, but you need to process it into the correct format.  
+### HW7
+Implement your own ISS keypoint detection.  
+• Apply your own ISS on ModelNet40 (choose 3 objects from different categories)  
+• Visualize the object and the keypoints together.  
+• Submit your code and the visualize screenshots.  
+### HW8
+Implement feature descriptors FPFH, SHOT  
+• You may call PCL library via python binding OR implement your own version.  
+• Example of python binding of PCL: https://github.com/lijx10/PCLKeypoints  
+• Test with ModelNet40 to ensure correctness.
+### HW9
+1.Implement feature detectors & descriptors  
+• Any algorithm you want  
+• You may call APIs. But still, your own implementation is preferred.  
+2.Implement your own ICP or NDT.  
+• Do NOT call APIs except for nearest neighbor search.  
+3.Test your registration algorithm on the provided dataset  
+• There is NO proper initialization provided.  
+• Report the following metrics. Evaluation script is provided.  
+4.We provide the registration dataset that contains 342 pairs of point clouds.  
+5.You are required to provide your registration results into “reg_result.txt”  
+• The original “reg_result.txt” is an example with 3 ground truth results.  
+• The rest of 339 ground truth results are not provided.  
+6.There is the “evaluate_rt.py”, it provides  
+• Functions to read and visualize the pairs  
+• Functions to evaluate the RRE, RTE, success rate  
